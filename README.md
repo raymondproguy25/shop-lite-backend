@@ -1,4 +1,4 @@
-# Shop Lite Backend
+# Shop Lite Backend Simple Readme file
 
 Welcome to the **Shop Lite Backend** – a lightweight, scalable backend API built with Node.js and Express.js. This project powers the core logic and data management for the Shop Lite application, handling everything from user accounts to product listings and orders.
 
