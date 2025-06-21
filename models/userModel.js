@@ -23,11 +23,18 @@ const userSchema = mongoose.Schema({
     required: true,
     minlength: 6
   },
+  profileImage: {
+    type: String,
+    default: ""
+  },
   location: {
     type: String,
-    //required: true
-  } 
-}, { timestams: true });
+    default: ""
+  },
+  wishlist: [{
+    type: mongoose.Schema.Types.ObjectId, ref: "Product"
+  }]
+}, { timestamps: true });
 
 userSchema.pre('save', async function (next) {
  if (!this.isModified('password')) {
